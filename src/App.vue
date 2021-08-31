@@ -5,8 +5,8 @@
       color="primary"
       dark
     >
-      <div class="d-flex align-center">
-        <h1>SPYC</h1>
+      <div class="navContainer">
+        <h1 class="header">SPYC</h1>
       </div>
 
       <div class="nav">
@@ -14,7 +14,6 @@
         <router-link class="link" to="/about">About</router-link>
         <router-link class="link" to="/members">Members</router-link>
       </div>
-      <!-- <router-view /> -->
 
       <v-spacer></v-spacer>
         <v-switch
@@ -68,5 +67,14 @@ export default {
     padding: 3em;
     text-decoration: none;
     color: #fff;
+}
+
+@media (max-width: 715px) {
+  .header {
+    font-size: 1.5em;
+  }
+  .link {
+    padding: .5em;
+  }
 }
 </style>

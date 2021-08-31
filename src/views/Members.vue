@@ -1,14 +1,16 @@
 <template>
-    <div class="memberListContainer">
+    <div class="headerContainer">
         <h3 class="header">Our members keep us going and brighten our day!</h3>
-            <div v-for="member in members" :key="member.id.value">
-                <div class="imageContainer">
-                    <img v-bind:src="member.picture.large" v-bind:alt="member" class="memberImage">
-                </div>
-                <div class="nameContainer">
-                    {{member.name.first}}
-                    {{member.name.last}}
-                </div>
+            <div class="memberGridContainer">
+                    <div v-for="member in members" :key="member.id.value">
+                        <div class="imageContainer">
+                            <img v-bind:src="member.picture.large" v-bind:alt="member" class="memberImage">
+                        </div>
+                        <div class="nameContainer">
+                            {{member.name.first}}
+                            {{member.name.last}}
+                        </div>
+                    </div>
             </div>
     </div>
 </template>
@@ -31,14 +33,19 @@ export default {
 </script>
 
 <style scoped>
+.headerContainer {
+    font-size: 1.5em;
+}
+.memberGridContainer{
+    display: grid;
+    grid-column: auto;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
 .header{
     text-align: center;
-}
-.memberListContainer{
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 2em;
 }
 .memberImage{
     border-radius: 1.5em;
@@ -46,5 +53,11 @@ export default {
 }
 .nameContainer {
     padding-bottom: 2em;
+}
+
+@media (max-width: 715px) {
+    .memberGridContainer{
+        grid-template-columns: auto;
+    }
 }
 </style>
