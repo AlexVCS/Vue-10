@@ -42,39 +42,18 @@
         cols="12"
       >
         <h2 class="headline font-weight-bold mb-3">
-          Important Links
+          Come to Class Prepared
         </h2>
 
         <v-row justify="center">
           <a
-            v-for="(link, i) in importantLinks"
+            v-for="(link, i) in comePrepared"
             :key="i"
             :href="link.href"
             class="subheading mx-3"
             target="_blank"
           >
             {{ link.text }}
-          </a>
-        </v-row>
-      </v-col>
-
-      <v-col
-        class="mb-5"
-        cols="12"
-      >
-        <h2 class="headline font-weight-bold mb-3">
-          Ecosystem
-        </h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(eco, i) in ecosystem"
-            :key="i"
-            :href="eco.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ eco.text }}
           </a>
         </v-row>
       </v-col>
@@ -90,40 +69,18 @@
     },
 
     data: () => ({
-      ecosystem: [
+      comePrepared: [
         {
-          text: 'vuetify-loader',
-          href: 'https://github.com/vuetifyjs/vuetify-loader',
+          text: 'Yoga Accessories',
+          href: 'https://www.yogaaccessories.com/',
         },
         {
-          text: 'github',
-          href: 'https://github.com/vuetifyjs/vuetify',
+          text: 'Yoga Direct',
+          href: 'https://www.yogadirect.com',
         },
         {
-          text: 'awesome-vuetify',
-          href: 'https://github.com/vuetifyjs/awesome-vuetify',
-        },
-      ],
-      importantLinks: [
-        {
-          text: 'Documentation',
-          href: 'https://vuetifyjs.com',
-        },
-        {
-          text: 'Chat',
-          href: 'https://community.vuetifyjs.com',
-        },
-        {
-          text: 'Made with Vuetify',
-          href: 'https://madewithvuejs.com/vuetify',
-        },
-        {
-          text: 'Twitter',
-          href: 'https://twitter.com/vuetifyjs',
-        },
-        {
-          text: 'Articles',
-          href: 'https://medium.com/vuetify',
+          text: 'Guide to Yoga Equipment for Beginners',
+          href: 'https://www.bookyogaretreats.com/news/best-guide-yoga-equipment-for-beginners',
         },
       ],
       yogaAtHome: [

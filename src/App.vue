@@ -5,7 +5,7 @@
       color="primary"
       dark
     >
-      <div class="navContainer">
+      <div>
         <h1 class="header">SPYC</h1>
       </div>
 
@@ -20,6 +20,7 @@
           :value="darkMode"
           @change="toggleDarkMode"
           :label="`toggle ${switchLabel} mode`"
+          class="colorSwitch"
         ></v-switch>
     </v-app-bar>
 

@@ -33,14 +33,20 @@ export default {
 </script>
 
 <style scoped>
+*{
+    box-sizing: border-box;
+}
+
 .headerContainer {
     font-size: 1.5em;
 }
 .memberGridContainer{
     display: grid;
-    grid-column: auto;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1rem;
     justify-items: center;
+    justify-content: center;
 }
 .header{
     text-align: center;
@@ -48,7 +54,7 @@ export default {
     padding-bottom: 2em;
 }
 .memberImage{
-    border-radius: 1.5em;
+    border-radius: 5px;
     padding-bottom: 1em;
 }
 .nameContainer {

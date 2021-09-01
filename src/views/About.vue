@@ -15,6 +15,8 @@
 <style scoped>
 .header {
   text-align: center;
+  padding-top: .75em;
+  padding-bottom: .25em;
 }
 
 .aboutText {
