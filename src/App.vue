@@ -71,6 +71,9 @@ export default {
 }
 
 @media (max-width: 715px) {
+  .v-app-bar {
+    padding-top: 10px;
+  }
   .header {
     font-size: 1.5em;
   }
