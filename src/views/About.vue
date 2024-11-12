@@ -1,26 +1,47 @@
 <template>
   <div class="about">
     <h1 class="header">About Us</h1>
-    <p class="aboutText">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae convallis dolor. Suspendisse potenti. Donec nec ligula et purus pellentesque aliquam nec a metus. Sed vitae egestas libero. Curabitur lorem quam, fermentum quis tincidunt at, sollicitudin tincidunt ante. Integer nec metus enim. Aenean sed vestibulum sem. Etiam sit amet diam sed mi ultricies maximus nec in leo. Phasellus fermentum, sem nec efficitur ultrices, lectus purus molestie lacus, vel sodales erat orci eu nulla. Aenean blandit velit bibendum aliquam congue. Nullam sagittis, odio vitae gravida finibus, justo eros imperdiet lectus, id commodo augue odio quis lacus.
-      
-
-      Donec fermentum suscipit risus, eu hendrerit velit sagittis rhoncus. Aliquam nibh velit, ultrices at commodo ut, tincidunt id nunc. Praesent interdum aliquet massa nec bibendum. In id augue venenatis, interdum nibh ut, blandit lectus. Sed eu quam tincidunt, tincidunt odio sed, lacinia nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam varius, dui ac consequat blandit, lacus dolor dignissim justo, id ultricies magna neque in nunc. Maecenas gravida enim magna, maximus ullamcorper dolor maximus ut. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed mi orci, vulputate tristique elit sed, egestas sollicitudin enim. Aliquam ornare congue dui. Fusce a metus feugiat, hendrerit massa nec, porttitor nibh. In volutpat elit et pretium congue. Maecenas et placerat est.
-      <!-- <br /> -->
-      Fusce lacinia scelerisque dolor sed pretium. Etiam maximus vehicula nisi, a auctor lacus cursus quis. Sed vel ante feugiat, pellentesque neque eu, pharetra lectus. Sed augue mauris, ultricies ac ante nec, sodales sodales est. Proin ut maximus libero, sit amet condimentum leo. Aliquam semper ex id sapien ultrices tempus. Fusce aliquam eros dapibus augue tincidunt, molestie tincidunt quam finibus. Cras accumsan ultricies nulla, quis mollis urna aliquet id. Fusce ultrices nisi porttitor, ultrices lectus ut, placerat orci. Vivamus facilisis dui a aliquam fringilla. Vestibulum quis velit dui.
-    </p>
+    <div class="aboutTextContainer">
+      <p>
+        Welcome to the St. Pete Yoga Club, where our community of yogis comes
+        together to share the journey of wellness, mindfulness, and balance in
+        the vibrant heart of St. Petersburg, Florida. Our club is open to
+        everyone—from beginners taking their first steps on the mat to seasoned
+        practitioners seeking deeper insights. We believe yoga is for everybody
+        and every level, and our mission is to make it accessible, inclusive,
+        and transformative for all.
+        <br />
+        <br />
+        Our offerings are diverse, including group classes, workshops, and
+        special events focused on a variety of styles and practices, such as
+        Vinyasa, Hatha, Restorative, and Meditation. Each session is led by
+        passionate instructors dedicated to creating a warm and supportive
+        environment where members can explore and grow at their own pace.
+        <br />
+        <br />
+        Whether you’re looking to improve flexibility, relieve stress, or simply
+        connect with a like-minded community, St. Pete Yoga Club is here to
+        support your personal journey. Join us, and let’s find balance together.
+      </p>
+    </div>
   </div>
 </template>
 
 <style scoped>
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .header {
   text-align: center;
-  padding-top: .75em;
-  padding-bottom: .25em;
+  padding-top: 0.75em;
+  padding-bottom: 0.25em;
 }
 
-.aboutText {
-  width: 60%;
-  margin: 0 auto;
+.aboutTextContainer {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 </style>
